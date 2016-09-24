@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import './index.css';
+import './animate.css'
 
 
 function get_random(list) {
   const nextIndex = Math.floor((Math.random()*list.length));
   return [list[nextIndex], list[nextIndex + 1] ? list[nextIndex + 1] : list[nextIndex - 1] ];
 }
+
+
 
 class App extends Component {
 
@@ -71,21 +74,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <p>{this.state.message}</p>
+      <p className="animated bounceInDown">{this.state.message}</p>
 
       {this.state.currTruths.map((each, index) => {
         return (
-          <p
+          <p className="animated bounceInDown"
             onClick={this.onClickRight}
             key={index}
           >{each}</p>
         );
       })}
 
-      <p
+      <p className="animated bounceInDown"
         onClick={this.onClickWrong}
       >{this.state.currLie}</p>
-      <p>Score: {this.state.score}</p>
+      <p className="animated bounceInDown">Score: {this.state.score}</p>
       </div>
     );
   }

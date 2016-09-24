@@ -10,7 +10,8 @@ p {
   color: #859900;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
-  font-size: 150x;
+  animation-duration: 2s;
+  animation-delay: 3s;
 }
 
 
