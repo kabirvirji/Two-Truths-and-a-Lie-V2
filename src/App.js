@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './index.css';
 
 
 function get_random(list) {
@@ -40,7 +41,7 @@ class App extends Component {
   clearMessage = () => {
     this.setState({
       ...this.state,
-      message: ''
+      message: '' 
     });
   }
 
@@ -70,8 +71,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <p>{this.state.score}</p>
       <p>{this.state.message}</p>
+
       {this.state.currTruths.map((each, index) => {
         return (
           <p
@@ -84,7 +85,7 @@ class App extends Component {
       <p
         onClick={this.onClickWrong}
       >{this.state.currLie}</p>
-
+      <p>Score: {this.state.score}</p>
       </div>
     );
   }
