@@ -17,11 +17,11 @@ class App extends Component {
     super();
     this.state = {
       score: 0,
-      currTruths: ["I interned at a Vancouver start up last summer", "I love going to hackathons"],
+      currTruths: ["I study Computer Science at the University of Toronto", "I love going to hackathons"],
       currLie: "I develop beautiful Android applications",
       message: '',
-      truths: ["I currently work as a Full Stack developer at LemonStand", "2", "3", "4", "5"], 
-      lies: ["I interned at Google last year"", "B", "C", "D"]
+      truths: ["I currently work as a Full Stack developer at LemonStand", "I'm interested in web development", "3", "4", "5"], // no need to escape the single quote because we are using double quotes 
+      lies: ["I interned at Google last year"", "I am focusing my Computer Science degree in game design", "C", "D"]
     } // object key value pair
   }
 
