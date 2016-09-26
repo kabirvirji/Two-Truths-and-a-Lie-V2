@@ -20,8 +20,8 @@ class App extends Component {
       currTruths: ["I interned at a Vancouver start up last summer", "I love going to hackathons"],
       currLie: "I develop beautiful Android applications",
       message: '',
-      truths: ["1", "2", "3", "4", "5"], 
-      lies: ["A", "B", "C", "D"]
+      truths: ["I currently work as a Full Stack developer at LemonStand", "2", "3", "4", "5"], 
+      lies: ["I interned at Google last year"", "B", "C", "D"]
     } // object key value pair
   }
 
