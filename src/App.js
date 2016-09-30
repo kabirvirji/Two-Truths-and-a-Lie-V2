@@ -21,7 +21,7 @@ class App extends Component {
       currLie: "I develop beautiful Android applications",
       message: '',
       truths: ["I currently work as a Full Stack developer at LemonStand", "I'm interested in web development", "3", "4", "5"], // no need to escape the single quote because we are using double quotes 
-      lies: ["I interned at Google last year"", "I am focusing my Computer Science degree in game design", "C", "D"]
+      lies: ["I interned at Google last year", "I am focusing my Computer Science degree in game design", "I love sleeping in", "D"]
     } // object key value pair
   }
 
